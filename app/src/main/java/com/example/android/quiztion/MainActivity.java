@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkQuizAnswers(View view) {
+        totalScore = 0;
 
         // Question 1, right answer: "Vitamin C."
         RadioButton question1 = findViewById(R.id.answer_1b);
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), " You're a genius!", Toast.LENGTH_LONG).show();
         }
     }
+
 
     public void clearQuiz(View view) {
         totalScore = 0;
